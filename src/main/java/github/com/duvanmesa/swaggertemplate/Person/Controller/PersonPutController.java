@@ -22,6 +22,10 @@ import org.springframework.web.bind.annotation.*;
 })
 final class PersonPutController {
 
-
+    @PutMapping(value = "/PersonSingUpper", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> putPersonSignUpper(@RequestBody String body){
+        System.out.println(body);
+        return new ResponseEntity<>("Exitoso",HttpStatus.OK);
+    }
 
 }

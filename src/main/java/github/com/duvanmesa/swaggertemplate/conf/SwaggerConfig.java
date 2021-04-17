@@ -22,7 +22,7 @@ public class SwaggerConfig {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
 				.apis(RequestHandlerSelectors.any())
-				.apis(RequestHandlerSelectors.basePackage("co.com.tigo.gw.moblystnode.api"))
+				.apis(RequestHandlerSelectors.basePackage("github.com.duvanmesa.swaggertemplate.Person.Controller"))
 				.paths(PathSelectors.any())
 				.build();
 	}
